@@ -13,7 +13,7 @@ in
   };
 
   users.users.julius = {
-    uid = 1000;
+    uid = 1011;
     description = name;
     hashedPassword = fileContents ../../secrets/julius;
     isNormalUser = true;

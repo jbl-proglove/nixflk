@@ -9,6 +9,8 @@
 #    ../profiles/network/torrent.nix
 #    ../profiles/graphical/games
 #    ../profiles/virt
+     ../users/noah
+     ../users/julius
   ];
 
 #  environment.systemPackages = [ pkgs.system76-firmware ];
@@ -18,6 +20,7 @@
 #  boot.initrd.kernelModules = [ "dm-snapshot" ];
 #  boot.kernelModules = [ "kvm-intel" ];
 #  boot.extraModulePackages = [ ];
+  boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
 #  boot.loader.grub = {
